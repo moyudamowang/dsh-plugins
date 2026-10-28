@@ -1,0 +1,8 @@
+- insert:
+    - id: hover-index
+      name: '@local/hover-index'
+      config:
+        autoDiscover: true
+        autoSync: false
+        maxItems: 12
+        projectRoots: []

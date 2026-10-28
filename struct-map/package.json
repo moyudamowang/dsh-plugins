@@ -1,0 +1,48 @@
+{
+  "name": "@local/struct-map",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepSeek Harness (DSH) 插件：把实施方案画成结构图，放在聊天右侧栏。Live structure map for implementation plans — read *.struct.json in the workspace, draw the entity graph beside the chat.",
+  "type": "module",
+  "license": "MIT",
+  "author": "hdy",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "diagram",
+    "architecture",
+    "layout",
+    "planning"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/smoke.cjs",
+    "check": "node layout.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "flow.png",
+    "sample.png",
+    "flow.html"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

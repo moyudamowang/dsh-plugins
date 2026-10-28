@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# 本地生成的预览，不进仓库
+*.tmp.html
+out/

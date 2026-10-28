@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Structure map",
+    "description": "Draws every *.struct.json in the workspace next to the chat: nouns, relations, open items; redraws when the file changes."
+  }
+}

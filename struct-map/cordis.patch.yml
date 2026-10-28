@@ -1,0 +1,6 @@
+- insert:
+    - id: struct-map
+      name: '@local/struct-map'
+      config:
+        projectRoots: []
+        maxFiles: 200

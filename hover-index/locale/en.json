@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Code Hover",
+    "description": "Hover a function or variable name in chat to see what it is and where it lives; click to open it in VSCode."
+  }
+}

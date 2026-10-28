@@ -1,0 +1,28 @@
+name: Validate plugin monorepo
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check hover-index syntax and locales
+        shell: pwsh
+        run: |
+          node --check hover-index/index.js
+          node --check hover-index/client.js
+          Get-Content hover-index/locale/en.json -Raw | ConvertFrom-Json | Out-Null
+          Get-Content hover-index/locale/zh.json -Raw | ConvertFrom-Json | Out-Null
+      - name: Check struct-map syntax and smoke test
+        shell: pwsh
+        run: |
+          node --check struct-map/index.js
+          node --check struct-map/client.js
+          node --check struct-map/layout.mjs
+          node struct-map/test/smoke.cjs
