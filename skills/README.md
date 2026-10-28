@@ -9,3 +9,4 @@
 | Skill | 用途 | 关联插件 |
 |---|---|---|
 | [`struct-map`](struct-map/SKILL.md) | 从实施方案提取实体关系并维护结构图数据 | [`struct-map/`](../struct-map/) |
+| [`report-style`](report-style/SKILL.md) | 汇报体输出纪律：结论先行、章节自足、证据标注、字数减半（`/report-style` 调用） | 无（独立） |
