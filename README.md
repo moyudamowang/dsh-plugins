@@ -8,6 +8,7 @@
 |---|---|---|
 | **Hover Index** | 在聊天代码中悬停函数、变量、类等符号，查看定义并跳转到 VS Code | [`hover-index/`](hover-index/) |
 | **Struct Map** | 从工作区的 `*.struct.json` 生成右侧栏实体关系结构图 | [`struct-map/`](struct-map/) |
+| **Discussion Tree** | 右侧栏实时讨论树：按会话开关、fork 继承、记录会话绑定与唤醒，`/tree` 落盘 | [`discussion-tree/`](discussion-tree/) |
 
 ## 安装
 
@@ -23,6 +24,7 @@ dsh plugin --profile web add "<本仓库路径>/struct-map"
 ```sh
 dsh plugin --profile web add github:moyudamowang/dsh-plugins#path=hover-index
 dsh plugin --profile web add github:moyudamowang/dsh-plugins#path=struct-map
+dsh plugin --profile web add github:moyudamowang/dsh-plugins#path=discussion-tree
 ```
 
 详细需求、配置和边界见各插件的 README。
@@ -36,6 +38,7 @@ dsh plugin --profile web add github:moyudamowang/dsh-plugins#path=struct-map
 ```text
 hover-index/          DSH 代码符号悬停插件
 struct-map/           DSH 结构图插件
+discussion-tree/      DSH 主线讨论树插件
 skills/<skill-name>/  可复用 DSH skills
 ```
 

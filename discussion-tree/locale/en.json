@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Discussion Tree",
+    "description": "Live view of the discussion topic tree in the right sidebar; per-session enable/disable, fork migration, recorder-session bind and one-click wake, remove, close/reopen, and fold. Edits land through the /tree command."
+  }
+}

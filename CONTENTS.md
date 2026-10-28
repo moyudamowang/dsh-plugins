@@ -4,4 +4,5 @@
 
 - [`hover-index/`](hover-index/README.md)：代码符号悬停索引。
 - [`struct-map/`](struct-map/README.md)：实施方案结构图。
+- [`discussion-tree/`](discussion-tree/README.md)：右侧栏实时讨论树。
 - [`skills/`](skills/README.md)：可复用 Agent skills；结构图 skill 位于 [`skills/struct-map/SKILL.md`](skills/struct-map/SKILL.md)。

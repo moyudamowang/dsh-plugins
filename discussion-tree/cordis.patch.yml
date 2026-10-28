@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-discussion-tree
+      name: 'dsh-discussion-tree'
+      config: {}

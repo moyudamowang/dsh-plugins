@@ -1,0 +1,35 @@
+{
+  "name": "dsh-discussion-tree",
+  "version": "0.5.11",
+  "private": true,
+  "type": "module",
+  "description": "Live right-sidebar view of the discussion topic tree with per-session membership (enable/disable, automatic fork inheritance, detach to own copy), recorder-session bind/wake, mainline digest push (manual align + auto recitation), and manual remove/status/fold actions via the /tree command.",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-workspace-files",
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ],
+      "immediately": true
+    }
+  }
+}
